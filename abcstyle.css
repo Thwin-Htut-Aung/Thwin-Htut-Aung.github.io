@@ -1,0 +1,73 @@
+body{ background-image: url(background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+    .menu{
+      color: #000080;
+      font-weight: bold;
+      background-color: #D4AF37;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    .menu:active{
+        color: #003cff;
+    }
+  
+    h1, h3{
+      color: #000080;
+      background-color: #D4AF37;
+      line-height: 2em;
+      text-align: center;
+    }
+
+   a, a:visited{
+     color: #000080;
+   }
+
+   .midlogo{
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30em;
+      height: 20em;   
+}
+
+.info{
+    background-color: rgba(212,175,55,0.5);
+      margin-left: 20em;
+      margin-right: 20em;
+      padding: 2em
+}
+
+    @media screen and (max-width: 1100px) {
+      .menu{
+      padding-top: 0.1em;
+      padding-bottom: 0.1em;
+      padding-left: 0.1em;
+      padding-right: 0.1em;
+      }
+
+      .midlogo{
+        display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 20em;
+          height: 10em; 
+    }
+
+        .info{
+            margin: 0; 
+        }
+    }
+    
+
+
+
+    
+
+
+    

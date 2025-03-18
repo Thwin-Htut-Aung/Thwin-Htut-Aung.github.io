@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="abcstyle.css">
+  <script src="https://kit.fontawesome.com/fabe1a32d6.js" crossorigin="anonymous"></script>
+  <script src="abcscript.js"></script>
+
+<style>
+  .banner{
+        float: left;
+    }
+
+    .bannertext{
+      margin-left: 38em;
+    }
+
+  /* Styleing the tabs */
+.tab {
+  overflow: hidden;
+  border: 3px solid white;
+  background-color: #d4af37;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #8086fd;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #D4AF37;
+}
+
+#courses{
+  display: block;
+}
+
+/*styling the cards in tabs*/
+  
+  /* Add shadows to create the "card" effect */
+  .card {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+        transition: 0.3s;
+      }
+      
+      /* On mouse-over, add a deeper shadow */
+      .card:hover {
+        box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.5);
+      }
+      
+      /* Add some padding inside the card container */
+      .container {
+        padding: 2px 16px;
+        text-align: center;
+      }
+
+      #tabs{
+          background-color: #D4AF37;
+      }
+
+      #c1{
+        margin-right: 68em; position: absolute
+      }
+      #c2{
+        margin-left: 30em; margin-right: 30em; position: absolute
+      }
+      #c3{
+        margin-left: 65em
+      }
+      .c4{
+        margin-left: 30em; margin-right: 30em
+      }
+
+      .course {
+      color: #000080;
+    }
+
+    .course a{
+      color: #000080;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .course a:active{
+      color: #003cff
+    }
+
+    table{
+      margin-left: 27em
+    }
+    th, td{
+      border: 2px solid #000080;
+    }
+
+    @media screen and (max-width: 1200px) {
+
+      .banner{
+        float: none;
+        width: 100%;
+    }
+
+    .bannertext{
+      margin: 0;
+    }
+
+    #c1{
+        margin: 0; position: relative
+      }
+      #c2{
+        margin: 0; position: relative
+      }
+      #c3{
+        margin: 0
+      }
+      .c4{
+        margin: 0
+      }
+
+      table{
+        margin: 0
+      }
+    }
+
+</style>
+
+</head>
+
+<body>
+<a href="index.html"><img src="logo1.png" style="float: left; width: 6%; border-radius: 2em"></a>
+<br><br>
+<a href="index.html" style="margin-left: 2em" class="menu">Home</a> <a href="courses.html" class="menu">Courses</a>
+<a href="account.html" class="menu">Account</a> <a href="about.html" class="menu">About Us</a> <a href="contact.html" class="menu">Contact Us</a>
+<a href="terms.html" class="menu">Terms</a> <a href="sitemap.html" class="menu">Sitemap</a>
+<br><br>
+
+<img src="courses.png" alt="Image unavailable" class="banner">
+<br><br><br><br><br><br>
+<h3 class="bannertext">We offer efficient courses in HTML, CSS and JavaScript for web development,
+    Java programming and Python programming. These courses include many hours of hands-on experience and 
+    are guaranteed to prepare you with enough competence for your future career in computer science.</h3>
+<br><br><br><br><br><br><br><br>
+
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks active" onclick="openTab(event, 'courses')">Courses</button>
+  <button class="tablinks" onclick="openTab(event, 'course1')">Course 1</button>
+  <button class="tablinks" onclick="openTab(event, 'course2')">Course 2</button>
+  <button class="tablinks" onclick="openTab(event, 'course3')">Course 3</button>
+  <button class="tablinks" onclick="openTab(event, 'schedule1')">Schedule 1</button>
+  <button class="tablinks" onclick="openTab(event, 'schedule2')">Schedule 2</button>
+  <button class="tablinks" onclick="openTab(event, 'schedule3')">Schedule 3</button>
+</div>
+
+<!-- Tab content -->
+<div id="courses" class="tabcontent">
+  <div class="card" id="c1">
+    <img src="hcj.png" alt="image" style="width: 100%">
+    <div class="container" style="padding-bottom: 6em">
+      <h3>HTML, CSS and JavaScript</h3>
+      <p>This is a comprehensive course for HTML, CSS and JavaScript, the three most popular
+          web development technologies.
+      </p>
+    </div>
+  </div>
+  <div class="card" id="c2">
+    <img src="java.jpg" alt="image" style="width: 100%">
+    <div class="container">
+      <h3>Java Programming</h3>
+      <p>This course is for programming with Java, a popular, high-level, object-oriented programming language.
+      </p>
+    </div>
+  </div>
+  <div class="card" id="c3">
+    <img src="python.jpg" alt="image" style="width: 100%">
+    <div class="container">
+      <h3>Python Programming</h3>
+      <p>This course is for programming with Python, a popular, high-level, object-oriented programming language widely used 
+        in data science and artificial intelligence.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="course1" class="tabcontent">
+  <div class="card c4">
+    <img src="hcj.png" alt="image" style="width: 100%">
+    <div class="container">
+      <h3>HTML, CSS and JavaScript</h3>
+          <p class="course">This is a comprehensive course for HTML, CSS and JavaScript, the three most popular
+              web development technologies. HTML is for structuring web pages, CSS for styling, and JavaScript 
+              for facilitating interactivity. You will learn HTML, CSS and JavaScript very effectively with our 
+              highly qualified lecturers. We've included some project scenarios and tasks for you to work on in order 
+              to give you real-world problem solving experience.<br><br>Course Fees - $150<br><br>
+              <a href="account.html">Enroll now!</a>
+          </p>
+    </div>
+  </div>
+</div>
+
+<div id="course2" class="tabcontent">
+  <div class="card c4">
+    <img src="java.jpg" alt="image" style="width: 100%">
+    <div class="container">
+      <h3>Java Programming</h3>
+      <p class="course">This course is for programming with Java, a popular, high-level, object-oriented programming language used 
+          in many different fields such as back-end programming, mobile app development, desktop app development, 
+          intelligent systems and data analytics. You will learn thoroughly learn Java in modules, variables, methods,  
+          arguments, classes and objects, constructors, static and non-static nature, etc. We've included some project scenarios and tasks 
+          for you to work on in order to give you real-world problem solving experience.<br><br>
+          Course Fees - $200<br><br><a href="account.html">Enroll now!</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="course3" class="tabcontent">
+  <div class="card c4">
+    <img src="python.jpg" alt="image" style="width: 100%">
+    <div class="container">
+      <h3>Python Programming</h3>
+      <p class="course">This course is for programming with Python, a popular, high-level, object-oriented programming language widely used 
+        in data science and artificial intelligence, and also used in some other fields such as back-end programming and mobile app 
+        development. You will be provided with efficient lessons on Python to apply this object-oriented programming language in 
+        different fields. We've included some project scenarios and tasks for you to work on in order to give you real-world problem 
+        solving experience.<br><br>Course Fees - $210<br><br><a href="account.html">Enroll now!</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="schedule1" class="tabcontent">
+  <h3>HTML, CSS and JavaScript</h3>
+  <h3>This is a one-month course starting on 1st November.</h3>
+  <table>
+    <tr>
+      <th></th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    <tr>
+      <td>9am-12pm</td>
+      <td>Live lecture</td>
+      <td>Live lecture</td>
+      <td>Live lecture</td>
+      <td>Live lecture</td>
+      <td>Live lecture</td>
+    </tr>
+    <tr>
+      <td>1-2pm</td>
+      <td>Q&A session</td>
+      <td>Q&A session</td>
+      <td>Q&A session</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1-3:30pm</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Do project</td>
+      <td>Do project</td>
+    </tr>
+  </table>
+</div>
+
+<div id="schedule2" class="tabcontent">
+  <h3>Java Programming</h3>
+        <h3>This is a one-month course starting on 15th November.</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+          <tr>
+            <td>1-4pm</td>
+            <td>Live lecture</td>
+            <td>Live lecture</td>
+            <td>Live lecture</td>
+            <td>Live lecture</td>
+            <td>Live lecture</td>
+          </tr>
+          <tr>
+            <td>4:30-5:30pm</td>
+            <td>Q&A session</td>
+            <td>Q&A session</td>
+            <td>Q&A session</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>4:30-7pm</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Do project</td>
+            <td>Do project</td>
+          </tr>
+        </table>
+</div>
+
+<div id="schedule3" class="tabcontent">
+  <h3>Python Porgramming</h3>
+  <h3>This is a one-month course starting on 1st December.</h3>
+  <table>
+    <tr>
+      <th></th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    <tr>
+      <td>3-6pm</td>
+      <td>Live lecture</td>
+      <td>Live lecture</td>
+      <td>Live lecture</td>
+      <td>Live lecture</td>
+      <td>Live lecture</td>
+    </tr>
+    <tr>
+      <td>6:30-7:30pm</td>
+      <td>Q&A session</td>
+      <td>Q&A session</td>
+      <td>Q&A session</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6:30-9pm</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Do project</td>
+      <td>Do project</td>
+    </tr>
+  </table>
+</div>
+<br><br>
+
+  <h3>Follow Us! &emsp;<a href="https://www.facebook.com"><div class="fab fa-facebook"></div></a>&emsp;
+    <a href="https://www.twitter.com"><div class="fab fa-twitter"></div></a> &emsp;<a href="https://www.linkedin.com">
+    <div class="fab fa-linkedin"></div></a><br><a href="about.html">About Us</a> &emsp;<a href="contact.html">Contact Us</a>&emsp;
+    <a href="terms.html">Terms and Privacy Policy</a> &emsp;<a href="sitemap.html">Sitemap</a> &emsp;<div class="fas fa-copyright"></div>
+    ABC 2021. All rights reserved.
+    </h3>
+</body>
+</html>
